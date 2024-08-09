@@ -3,9 +3,7 @@ import { useState } from "react";
 import { ArrowDown } from "lucide-react";
 import styles from "./page.module.css";
 import CourseBlock from "./CourseBlock";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 
 const courseData = [
     {
