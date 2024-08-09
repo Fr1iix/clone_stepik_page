@@ -1,0 +1,100 @@
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6rem;
+  min-height: 30vh;
+  align-items: center;
+}
+
+.div {
+  margin-top: 5px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid white;
+  padding: 30px 20px;
+  background-color: rgb(253, 253, 253);
+  border-top: 1px solid #e4e7eb;
+}
+
+.obj {
+  display: grid;
+  height: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+
+}
+
+
+.bb {
+  position: relative;
+  border-radius: 10px;
+  background-color: #fdfdfd;
+  transition: transform 0.2s ease;
+  box-shadow: 0 3px 5px rgba(149, 150, 152, 0.3);
+  padding: 10px;
+}
+
+.bb:hover {
+  box-shadow: 0 3px 5px rgba(115, 122, 253, 0.3);
+  transform: scale(1.05);
+}
+
+/* Адаптивные стили */
+@media (max-width: 800px) {
+  .obj {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки на меньших экранах */
+    width: 600px;
+    height: 500px;
+
+  }
+}
+
+/* стили для заголовка и кнопок */
+.header {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px; /* Отступы между кнопками */
+  margin-top: 20px;
+}
+.mb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+.text {
+  position: absolute;
+  padding: 10px;
+  bottom: 0
+}
+.button {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  background-color: rgba(55, 0, 179, 0.3);
+}
+
+.button:focus {
+  outline: none;
+}
