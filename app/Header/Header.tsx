@@ -1,9 +1,6 @@
-import { Inter } from "next/font/google";
 import styles from './header.module.css'
 import Image from "next/image";
-import { ArrowBigUp, ChevronDown } from "lucide-react";
-
-const inter = Inter({ subsets: ["latin"] });
+import { ChevronDown } from "lucide-react";
 
 export default function Header() {
     return (
